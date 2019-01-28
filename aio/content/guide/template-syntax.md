@@ -1116,7 +1116,10 @@ The `$event` variable contains the payload of the `SizerComponent.sizeChange` ev
 Angular assigns the `$event` value to the `AppComponent.fontSizePx` when the user clicks the buttons.
 
 Clearly the two-way binding syntax is a great convenience compared to separate property and event bindings.
-
+<b>
+*It is important to mention that two-way binding will work with events that their names are the variable's name + 'Change'.<br>
+Meaning that this two-way binding works because the event name is "sizeChange", otherwise it wouldn't work.
+</b>
 It would be convenient to use two-way binding with HTML form elements like `<input>` and `<select>`.
 However, no native HTML element follows the `x` value and `xChange` event pattern.
 
